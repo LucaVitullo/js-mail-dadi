@@ -14,9 +14,31 @@ for (let i = 0; i < emailUsers.length; i++){
     if(email === emailUsers[i]){
         console.log("email verificata")
     }
-    else(email !== emailUsers);{
+    else{
         console.log("email inesistente")
-    }
-}
 
+    }
+    
+}
+/*Gioco dei dadi
+
+Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
+Stabilire il vincitore, in base a chi fa il punteggio più alto.*/
+/*
+let dadoPlayer = Math.floor((Math.random() * 6)+ 1)
+let dadoComputer = Math.floor((Math.random() * 6)+ 1)
+
+console.log("Ti è uscito " + dadoPlayer);
+console.log("Al computer è uscito " + dadoComputer);
+
+if(dadoPlayer > dadoComputer){
+    console.log("hai vinto")
+}
+else if(dadoComputer > dadoPlayer){
+    console.log("hai perso")
+}
+else{
+    console.log("hai pareggiato")
+}
+*/
 
