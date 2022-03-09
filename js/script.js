@@ -6,28 +6,24 @@ stampa un messaggio appropriato sull’esito del controllo.
 */
 let email = prompt("Qual'è la tua email?").toLowerCase();
 let emailUsers = ["luca@gmail.com", "giovanni@gmail.com","pietro@gmail.com"];
-let validEmail = "";
+let validEmail = false;
 console.log("La tua email è " + email);
 
 for (let i = 0; i < emailUsers.length; i++){
 
     if(email === emailUsers[i]){
-        console.log("email verificata")
+        console.log("email verificata");
         validEmail = true;
-
     }
-    else{
-        console.log("email inesistente")
-        validEmail = false;
-
-    }
-    
+}
+if(validEmail === false){
+    console.log("email inesistente");
 }
 /*Gioco dei dadi
 
 Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
 Stabilire il vincitore, in base a chi fa il punteggio più alto.*/
-/*
+
 let dadoPlayer = Math.floor((Math.random() * 6)+ 1)
 let dadoComputer = Math.floor((Math.random() * 6)+ 1)
 
@@ -43,5 +39,5 @@ else if(dadoComputer > dadoPlayer){
 else{
     console.log("hai pareggiato")
 }
-*/
+
 
